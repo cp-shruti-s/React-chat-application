@@ -6,7 +6,7 @@ const AuthContext = React.createContext();
 
 export const useAuth = () => useContext(AuthContext);
 
-export const AuthProvider = ({ children}) => {
+export const AuthProvider = ({ children }) => {
     const [loading, setLoding] = useState(true);
     const [user, setUser] = useState(null);
     const history = useHistory();
